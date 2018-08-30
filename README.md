@@ -1,4 +1,7 @@
-# Duke fall18 PS630 lab
+---
+title: Updates
+author: Haohan Chen, Ngoc Phan
+date: today
+---
 
-Instructor: Edmund Malesky
-Teaching Assistant: Haohan Chen, Ngoc Phan
+# Duke fall18 PS630 lab
