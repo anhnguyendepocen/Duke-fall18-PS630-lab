@@ -121,6 +121,10 @@ install.packages("ggplot2")
   data_f <- merge(data_f_gdppc, data_f_corruption, by = "country")
 # See the final product
   # View(data_f)
+# Save the dataset (first set the working directory)
+  write.csv(data_f, "data_cleaned.csv", row.names = F)
+# Read the dataset from csv
+  data_f <- read.csv("data_cleaned.csv")
 ```
 
 ### Plots
