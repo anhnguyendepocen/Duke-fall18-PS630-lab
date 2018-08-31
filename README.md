@@ -1,6 +1,8 @@
 ## Info
 
-We share material of the lab section of POLSCI630 Probability and Regression here.
+We share lab materials of POLSCI630 Probability and Regression here (Duke Fall 2018).
+
+TAs: Haohan Chen, Ngoc Phan
 
 ## Announcement
 
