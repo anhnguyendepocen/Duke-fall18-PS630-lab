@@ -124,7 +124,7 @@ install.packages("ggplot2")
 # Save the dataset (first set the working directory)
   write.csv(data_f, "data_cleaned.csv", row.names = F)
 # Read the dataset from csv
-  data_f <- read.csv("data_cleaned.csv")
+  data_f_2 <- read.csv("data_cleaned.csv")
 ```
 
 ### Plots
