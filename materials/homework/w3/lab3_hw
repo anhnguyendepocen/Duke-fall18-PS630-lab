@@ -1,0 +1,43 @@
+---
+title: "Lab_3_HW"
+author: "Ngoc Phan"
+date: "September 25, 2018"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Import .dta files into R
+
+First, we need to import the _Happy Planet Index_ dataset (read more about it [here](http://happyplanetindex.org/)). The file is in Stata's _.dta_ format. To import such files, install the package **readstata13** and use the command **read.dta13** as shown below.
+
+```{r}
+#install.packages("readstata13")
+library(readstata13)
+happy <- read.dta13("happy_planet.dta")
+```
+
+## Explore the data (1 point)
+
+1. Present an overview of the data frame **happy**, showing the mean, median, minimum and maximum values of each variable.
+
+
+## Data Cleaning (3 points)
+
+2. Obtain a subset of the data frame with observations from Africa, then assign it to a new object called **africa**.
+3. Create a new variable, **newregion**, that takes value of "West", "Middle East", "Africa", "South Asia", "East Asia", "Eastern Europe/USSR", and "Latin America", based on existing variables in the dataset.
+4. Drop variables other than **country**, **lifesat010**, **gdppercapitappp**, **newregion** from the data frame.
+
+## Bivariate Linear Regression (6 points)
+
+5. Create a scatter plot of **lifesat010** against **gdppercapitapp**, using either _plot_ or _ggplot_. Please label the axes appropriately.
+6. Regress **lifesat010** on **gdppercapitappp**.  Report the results (R output is fine, no need to use _stargazer_ yet) 
+7. Interpret the coefficient on **gdppercapitapp**
+8. Generate a new variable in **happy** that takes on the predicted values of **lifesat010** from the regression. Name it **yhat**.
+9. Generate a new variable that takes on the value of the residuals from the regression. Name it **uhat**.
+10. Plot the residuals against **gdppercapitappp**. Are Gauss-Markov assumptions 4 and 5 satisfied?
+
