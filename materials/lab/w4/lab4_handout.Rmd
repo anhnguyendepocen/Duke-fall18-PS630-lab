@@ -8,7 +8,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T, messages = F, warning = F)
+knitr::opts_chunk$set(echo = T, messages = F, warning = F, eval = FALSE)
 ```
 
 # Intro to RMarkdown
@@ -36,14 +36,12 @@ colnames(happy)
 library(dplyr)
 ```
 
-```
+
 In the following subsections, we are going to contrast how we do certain tasks in base R and the way we do it in **dplyr**.
 
 ## _Select_: Keeping and dropping variables
 
 ```{r Keep and drop variables}
-#?select
-
 #Base R
 happy1 <- happy[, c("country", "lifesat010", "hdi", "gdppercapitappp")]
 colnames(happy1)
