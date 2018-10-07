@@ -1,0 +1,9 @@
+---
+title: "PS630 Week 5 Handout"
+subtitle: "Revision of OLS Basics"
+author: "Haohan Chen"
+date: "October 4, 2018"
+output: pdf_document
+---
+
+
